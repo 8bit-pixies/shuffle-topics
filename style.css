@@ -1,4 +1,1 @@
-p {
-  font-family:verdana;
-  font-size: 24px;
-}
+body{min-width: 20em;max-width: 50em; hidden;margin-top: 60px;margin-left: 64px;margin-right: 14px;margin-bottom: 0px;font-family:verdana;font-size:28px;}
