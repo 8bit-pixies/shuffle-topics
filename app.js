@@ -1,6 +1,6 @@
 var app = angular.module('topic-shuffle', []);
 
-app.controller('MainCtrl', ['$http', function($scope, util) {
+app.controller('MainCtrl', ['$scope', '$http', 'util', function($scope, $http, util) {
   $http.get('https://chappers.github.io/shuffle-topics/topics-20160415.txt')
     .then(function(data) {
       $scope.topicList = util.shuffle(data.split('\n'));
