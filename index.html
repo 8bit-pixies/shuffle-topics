@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html ng-app="topic-shuffle">
+  <head>
+    <meta charset="utf-8" />
+    <title>Topcs Shuffler</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.angularjs.org/1.1.1/angular.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="MainCtrl">
+    <p><button ng-click='getNextTopic()' >Next Topic</button><p>
+    <p>{{currentTopic}}</p>
+  </body>
+</html>
