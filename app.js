@@ -3,7 +3,7 @@ var app = angular.module('topic-shuffle', []);
 app.controller('MainCtrl', ['$scope', '$http', 'util', function($scope, $http, util) {
   $http.get('https://cdn.rawgit.com/chappers/shuffle-topics/gh-pages/topics-20160415.txt')
     .success(function(data) {
-      console.log(data)
+      //console.log(data);
       $scope.topicList = util.shuffle(data.split('\n'));
     });
 
